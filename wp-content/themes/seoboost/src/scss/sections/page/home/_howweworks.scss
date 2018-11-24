@@ -1,0 +1,237 @@
+/* home page stylesheet*/
+.howWeWork {
+    padding-top: 2em;
+    min-height: 500px;
+
+    @media (min-width: $screen-md-min) {
+        padding-top: 7em;
+        min-height: 885px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        min-height: 1200px;
+    }
+
+    .row {
+        margin: 0;
+
+        @media (min-width: $screen-md-min) {
+            margin: auto;
+        }
+
+        .text-center {
+            width: 100%;
+        }
+    }  
+
+    .title {
+
+        h3 {
+            font-size: 2em;
+            color: $text;            
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            margin-top: 50px;
+            font-weight: bold;
+            font-family: 'Univers';
+
+            @media (min-width: $screen-sm-min) {
+                font-size: 3em;
+            }
+
+            @media (min-width: $screen-md-min) {
+                font-size: 4em;
+            }
+
+            @media (min-width: $screen-lg-min) {
+                margin-top: 186px; 
+                font-size: 6em;
+            }
+        }
+
+        span {
+            color: $span;
+            font-size: 0.9em;
+            line-height: 0.5em;
+
+            @media (min-width: $screen-sm-min) {
+                font-size: 1.5em;
+                line-height: 1.3em;
+                width: 57%;
+                display: block;
+                margin: auto;
+                margin-top: 1em;
+                margin-bottom: 2em;
+            }
+
+            @media (min-width: $screen-lg-min) { 
+                font-size: 2.5em;
+            }
+        }
+    }
+
+    .smallRow {        
+        padding: 0;
+        margin: 0;
+        
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 4em;
+
+        li {
+            list-style-type: none;
+            
+            .image {
+                margin-bottom: 1em;
+
+                //background: red!important;
+                @media (min-width: $screen-md-min) {
+                    
+                    &::after {
+                        display: block;
+                        content: '';                                      
+                        width: 100%;
+                        max-width: 14em;
+                        height: 1px;
+                        position: absolute;
+                        top: 4em;
+                        left: 12em;                    
+                        background-repeat: no-repeat;
+    
+                        @media (min-width: $screen-lg-min) {
+                            max-width: 13em;
+                            top: 5em;
+                            left: 10em; 
+                        }
+        
+                        
+                        background-image: url(../assets/how_we_work_line@2x.png);            
+                        @include image-2x("how_we_work_line@2x.png", 400px, 1px);
+                    }
+                }                    
+            }/*end of image*/
+
+            &:first-child {
+
+                .image {
+                    margin-bottom: 2em;
+                    
+                    &::after {
+                        width: 100%;
+                        max-width: 11em;
+                        left: 16em;
+
+                        @media (min-width: $screen-lg-min) {
+                            max-width: 11em;
+                            left: 12em;
+                        }
+                        
+                        
+                    }
+                }
+            }
+
+            &:last-child {
+                .image {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        @media (min-width: $screen-lg-min) {
+            width: 85%;           
+        }
+
+        
+        div {
+            //min-height: 100px;
+
+            @media (min-width: $screen-lg-min) {
+              //  min-height: 600px;
+            }          
+        }
+
+        .image {
+            width: 5em;
+            height: 5em;
+            margin: auto;
+            display: block;            
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            @media (min-width: $screen-md-min) {
+                width: 8em;
+                height: 8em;
+            }
+            
+        }
+
+        .plane{
+            background-image: url(../assets/how_we_work_plane@2x.png);            
+            
+            background-size: cover;
+
+            @media (min-width: $screen-sm-min) {
+                @include image-2x("how_we_work_plane@2x.png", 97px, 100px);
+            }
+        }
+
+        .dote {
+            background-image: url(../assets/how_we_work_circle@2x.png);            
+            
+            @include image-2x("how_we_work_circle@2x.png", 30px, 30px);
+        }
+
+        .title {
+            font-size: 1em;
+            letter-spacing: 0.05px;
+            font-family: 'Universe';
+            color: $nextred;
+            text-transform: uppercase;
+            line-height: 1em;
+
+            @media (min-width: $screen-sm-min) {
+                font-size: 2em;
+            }
+
+            @media (min-width: $screen-lg-min) {
+                font-size: 3em;
+                letter-spacing: 0.75px;
+            }
+
+        }
+
+        .greyText {
+            color: $nextccc;           
+            font-size: .85em;
+            line-height: 1.4em;
+            margin-top: 0.5em;
+
+            @media (min-width: $screen-sm-min) {
+                font-size: 1.15em;
+            }
+
+            @media (min-width: $screen-lg-min) {
+                font-size: 2.25em;
+            }
+        }
+
+        .stepOne {
+            position: relative;  
+        }
+
+        .stepTwo {
+            position: relative; 
+        }
+
+        .stepThree {
+            position: relative; 
+        }
+
+        .stepFour {
+            position: relative;            
+        }
+    }
+}

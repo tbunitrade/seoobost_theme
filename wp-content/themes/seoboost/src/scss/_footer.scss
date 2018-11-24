@@ -1,0 +1,195 @@
+.footer {
+    padding-top: 2em;
+    position:relative;
+
+    @media (min-width: $screen-md-min) {
+        padding-top: 12em;
+    }
+    
+    .col-md-5 {
+
+        img {
+            max-width: 15em;
+            margin-left: 0em;
+            margin: auto;
+
+            @media (min-width:$screen-md-min) {               
+                max-width: 20em;
+                margin-left: 2em;
+            }            
+        }
+    }/*end of this*/
+
+    .col-md-7 {
+
+        img {
+            position: relative;
+            right: -1em;
+
+            @media (min-width: $screen-md-min) {
+                right: -1em;
+            }
+        }
+    }/*end of this*/
+
+    .col-md-8 {
+        margin-bottom: 1em;
+
+        img {
+            margin: auto;
+            display: block;            
+
+            @media (min-width: $screen-md-min) {
+                width: 41em;
+                margin-top: 5em;
+            }    
+        }
+        
+    }/*end of this*/
+
+    .col-md-4 {
+        margin-top: 1em;
+        margin-bottom: 2em;
+
+        @media (min-width:$screen-md-min) {  
+            margin-top: 5em;
+            margin-bottom: 5em;
+        }
+    }/*end of this*/
+
+    .row {
+        margin: 0;
+
+        @media (min-width: $screen-md-min) {
+            margin: auto;
+        }
+    }/*end of this*/
+
+    .title {
+        color:$smalltitlered;
+        font-size: 1em;
+        line-height: 1em;
+        text-transform: uppercase;        
+        margin: auto;
+        margin-top: 0.4em;
+        margin-left: 0.3em;
+        font-weight: 700;
+        
+        @media (min-width: $screen-sm-min) {
+            font-size: 1.3em;
+            line-height: 1em;
+            margin-top: 4em;
+            margin-left: 1.6em;
+        }
+        
+
+        @media (min-width: $screen-lg-min) {
+            font-size: 3em;
+            line-height: 3em;
+            margin-top: 4em;
+            margin-left: 3em;
+        }
+    }/*end of title*/
+
+    .text {
+        font-size: 0.8em;
+        color:$text;      
+        line-height: 2em;
+        margin-top: 1em;
+        margin-left: 0.5em;
+
+        @media (min-width: $screen-sm-min) {
+            font-size: 0.8em;
+            line-height: 2em;
+            margin-left: 2.7em;                
+            margin-top: 2em;
+            margin-right: 12em;
+            margin-bottom: 14em;
+        }
+
+        @media (min-width: $screen-lg-min) {
+            font-size: 1.8em;        
+            line-height: 2em;
+            margin-left: 5em;
+        }
+    }/*end of text*/
+
+    .lastTitle {
+        color: $smalltitlered;
+    }/*end of lastTitle*/
+
+    .backTopArrow    {
+        width: 100%;
+        //max-width: 5em; 
+        display: inline-block;
+        line-height: 1em;
+        font-size: 0.5em;
+        font-family:    'Arial';
+        font-weight:bold;
+        color: $nav;       
+        margin: 1em 0em;        
+        text-transform: uppercase; 
+        
+        img {
+            width: 23px;
+            height: 23px;
+        }
+        
+      
+        @media (min-width: $screen-sm-min) {        
+            font-size: 1em;
+            img {
+                width: 42px;
+                height: 42px;
+            }
+        }
+
+        @media (min-width: $screen-md-min) {            
+            max-width: 14em;            
+        }
+
+        @media (min-width: $screen-lg-min) {
+            margin: 4em; 
+            img {
+                width: 84px;
+                height: 84px;                
+            }
+        }
+
+        label {                       
+            display: inline-block;
+            vertical-align: middle;
+            height: auto;            
+            position: relative;
+            top: -9px;
+            
+            @media (min-width: $screen-sm-min) {
+                
+            }
+
+            @media (min-width: $screen-md-min) {                
+                top: -15px;
+            }
+
+            @media (min-width: $screen-lg-min) {
+                
+            }
+        }         
+    }/*end of backTopArrow*/
+    
+    .float-right {
+        background-position-x: 0%;
+        transform: rotate(180deg);
+
+        label {
+            transform: rotate(180deg);
+            background-position-x: 100%; 
+            padding-right: 1em;
+            position: relative;           
+
+            @media (min-width: $screen-sm-min) {
+                
+            }
+        }
+    }/*end of float-right*/
+}/*end of footer*/

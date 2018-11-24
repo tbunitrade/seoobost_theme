@@ -1,0 +1,138 @@
+/* home page stylesheet*/
+.wireFraming {
+    background: url(../img/background-part.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: auto;
+
+    @media (min-width: $screen-md-min) {
+        height: 59em;
+    }
+
+    .row {
+        margin: 0;
+
+        @media (min-width: $screen-md-min) {
+            margin: auto;
+        }
+
+        .text-center {
+            width: 100%;
+        }
+    } /*end of row*/
+
+    .title {
+        font-size: 2em;
+        color: $white;
+        text-transform: uppercase;
+        font-family: 'Universe';
+        
+        margin-top: 1.2em;
+        margin-left: 0;
+
+        @media (min-width: $screen-sm-min) {
+            margin-top: 0.2em;
+            margin-left: 0.52em;
+        }
+
+        @media (min-width: $screen-md-min) {
+            font-size: 4em;
+            margin-top: 1.2em;
+            margin-left: 0.52em;
+        }
+        @media (min-width: $screen-lg-min) {
+            font-size: 6em;
+            margin-top: 2.2em;
+            margin-left: 1.52em;
+        }
+    }  /*end of title*/
+    
+    .description {
+        font-size: 1.25em;
+        line-height: 1.5em;
+        color: $white;
+        font-family: "Open Sans";              
+        margin-top: 0.2em;
+        margin-left: 0.12em;
+
+        @media (min-width: $screen-sm-min) {
+               
+        }
+        
+        @media (min-width: $screen-md-min) {           
+            font-size: 1.25em;
+            line-height: 1em;
+            margin-top: 1em;
+            margin-left: 1.82em;
+        }
+
+        @media (min-width:  $screen-lg-min) {
+            font-size: 2.25em;
+            line-height: 2em;
+            margin-top: 80px;
+            margin-left: 2.2em;
+        }
+    }/*end of description*/
+
+    img {      
+        width: 100%;
+        max-width: 19em;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-top: 5.2em;
+        max-width: 16em;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-top: 5.2em;
+        position: relative;
+        
+
+        @media (min-width: $screen-md-min) {
+            left: -1.7em;
+        }
+    }/*end of this*/
+
+    .arrow-down {
+        background-image: url('../img/arrow-down.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 1em;     
+        height: 5em;
+        margin: auto;
+        position: relative;
+        top: 2em;
+        left: 0;
+
+        @media (min-width: $screen-md-min) {
+            left: -2em;
+        }
+    }/*end of this*/
+
+    .more-down {
+        
+        @media (min-width: $screen-md-min) {
+            display: none;
+        }
+    }
+
+    .arrow-left {
+
+        background-image: url('../img/arrow-left.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 6em;
+        height: 1em;
+        margin: auto;
+        position: relative;
+        top: -5em;
+        left: -14em;
+        background-size: contain;
+    }/*end of this*/
+
+    .arrow-right {
+        background-image: url('../img/arrow-left.png');
+        transform: rotate(180deg);
+    }/*end of this*/
+}/*end of wireframing*/

@@ -1,0 +1,283 @@
+.header {    
+    background-image: url(../assets/header_image@2x.png);
+    
+    //@include image-2x("header_image@2x.png", 100%, 100%);
+    //background-image: -webkit-image-set( url(../assets/header_image.png) 1x, url(..assets/header_image@2x.png) 2x);
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 522px;    
+
+    @media (min-width: $screen-sm-min) {
+        background-size: unset; 
+        min-height: 688px;
+
+        @include image-2x("header_image@2x.png", 100%, 100%);
+    }
+
+    @media (min-width: $screen-md-min) {
+        min-height:988px;
+        background-size: cover; 
+    }   
+
+    @media (min-width: 1400px) { 
+        min-height: 1500px;
+    }
+
+
+    .row {
+        margin: 0;
+
+        @media (min-width: $screen-md-min) {
+            margin: auto;
+        }
+
+        .text-center {
+            width: 100%;
+        }
+    }/*end of row*/
+    
+    .backTopArrow    { 
+        width: 100%;
+        max-width: 5em; 
+        display: inline-block;
+        line-height: 1em;
+        font-size: 1em;
+        font-family:    'Arial';
+        font-weight:bold;
+        color: $nav;       
+        margin: 1em 0em;        
+        text-transform: uppercase; 
+        
+        img {
+            width: 23px;
+            height: 23px;
+        }
+        
+      
+        @media (min-width: $screen-sm-min) {        
+            
+            img {
+                width: 42px;
+                height: 42px;
+            }
+        }
+
+        @media (min-width: $screen-md-min) {            
+            max-width: 14em;            
+        }
+
+        @media (min-width: $screen-lg-min) {
+            margin: 4em; 
+            img {
+                width: 84px;
+                height: 84px;                
+            }
+        }
+
+        label {                       
+            display: inline-block;
+            vertical-align: middle;
+            height: auto;            
+            position: relative;
+            top: -5px;
+            
+            @media (min-width: $screen-sm-min) {
+                
+            }
+
+            @media (min-width: $screen-md-min) {                
+                top: -16px;
+            }
+
+            @media (min-width: $screen-lg-min) {
+                
+            }
+        }               
+    }/*end of backTopArrow*/
+
+    .smallLogo {
+        display: block;
+        background-image: url(../assets/logo_sigma@2x.png);
+        background-size: contain;   
+        background-repeat: no-repeat; 
+        float: right;
+        width: 5em;
+        height: 2em;     
+        margin: 1em 0em;
+        
+        @media (min-width: $screen-sm-min) {
+            width: 131px;       
+            height: 37px; 
+
+            @include image-2x("logo_sigma@2x.png", 131px, 37px); 
+        }              
+                                       
+        @media (min-width: $screen-md-min) {           
+            margin: 1em;
+            width: 100%;
+            max-width: 8em;
+
+            @include image-2x("logo_sigma@2x.png", 262px, 73px);
+        }  
+    }/*end of smalllogo*/
+    
+    /*end of first row*/
+
+    .logo {
+        //background-image: url(../assets/logo_sigmavia.png);    
+        background-image: url(../assets/logo_sigmavia@2x.png);    
+        background-repeat: no-repeat; 
+        width: 278px;        
+        height: 59px;
+        margin: auto;
+        display: block;
+        position: relative;
+        margin-top: 2em;
+        margin-bottom: 2em;       
+
+        @include image-2x("logo_sigmavia@2x.png",278px, 59px);
+
+        @media (min-width: $screen-sm-min) {
+            margin-top: 3em;
+            margin-bottom: 7em;
+
+            
+        }
+
+        @media (min-width: $screen-md-min) {
+            margin-top: 7em;
+            margin-bottom: 11em;
+            
+            width: 556px;
+            height: 118px; 
+
+            @include image-2x("logo_sigmavia@2x.png",556px, 118px);
+        }
+
+        @media (min-width: $screen-lg-min) { 
+            margin-top: 70px 
+        }
+    }/*end of logo*/
+
+    .bigTitle {              
+
+        h1 {
+            font-size: 2em;
+            color: $title;
+            font-family: 'Univers';
+            line-height: 1em;
+            letter-spacing: 0.11em;
+            font-weight: 500;           
+            text-transform: uppercase;
+            margin-bottom: 1em;
+
+            @media (min-width: $screen-sm-min) { 
+                font-size: 3em;
+                line-height: 1em;
+                margin-bottom: 0;
+            }
+
+            @media (min-width: $screen-md-min) { 
+                font-size: 4em;
+            }
+
+            @media (min-width: $screen-lg-min) { 
+                font-size: 8em;
+                line-height: 96px;
+                line-height: 4em;                            
+            }  
+        }     
+       
+        h2 {
+            display: block;          
+            color: $titlelabel;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 1.1em;
+            line-height: 1em;
+            letter-spacing: 0;
+
+            @media (min-width: $screen-sm-min) {
+                font-size: 1.7em;
+                line-height: 2em;
+                letter-spacing: 0.0em;
+            }
+
+            @media (min-width: $screen-lg-min) { 
+                font-size: 4.5rem;               
+            }  
+        }
+    } /*end of big title*/
+
+    .titleLine {
+        background: $smalltitlered;        
+        width: 100%;
+        max-width: 10em;
+        height: 0.1em;
+        display: block;
+        margin: auto;
+        margin-top: 1em;
+        margin-bottom: 2em;               
+
+        @media (min-width: $screen-sm-min) {           
+            margin-top: 2em;
+            margin-bottom: 3em;
+        }
+
+        @media (min-width: $screen-md-min) {
+            margin-top: 2em;
+            margin-bottom: 3em;
+        }
+
+    }/*end of titleline*/
+
+    .description {
+        display: block;
+        width: 100%;       
+        line-height: 76px;
+
+        h3 {
+            display: block;            
+            font-size: 0.71em;      
+            color: $text;            
+            line-height: 1em;
+            font-weight: 400;
+            font-family: 'Open Sans';
+            font-style: italic;
+            margin-bottom: 1em;            
+
+            @media (min-width: $screen-sm-min) {
+                font-size: 1.3em;
+                line-height: 2em;
+                margin-bottom: 0;
+            }
+
+            @media (min-width: $screen-lg-min) {
+                font-size: 3em;
+                line-height: 1em;
+            }
+        }
+ 
+        h4 {            
+            font-size: 0.9em;   
+            color: $smalltitlered;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: 'Universe';
+            letter-spacing: 0.02em;
+
+            @media (min-width: $screen-sm-min) {
+                font-size: 1.6em;
+                letter-spacing: 0.1em;   
+            }            
+
+            @media (min-width: $screen-lg-min) {
+                font-size: 3.75em;
+            }
+        }        
+    }    /*end of description*/   
+}
+
+
