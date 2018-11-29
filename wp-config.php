@@ -21,7 +21,7 @@
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
 define('DB_NAME', 'sivenkof_blog');
-
+define('SENDGRID_API_KEY', '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');
 /** Имя пользователя MySQL */
 define('DB_USER', 'root');
 //define('DB_USER', 'sivenkof_vladimir');

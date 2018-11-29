@@ -11,11 +11,11 @@
 
 if(get_theme_mod('home_style')=='Grid') : 
 
- $column = 'col-lg-6 masonry';
+ $column = 'col-lg-4 masonry';
  
  else :
  
- $column = 'col-lg-6 masonry';
+ $column = 'col-lg-4 masonry';
  
  endif;
  ?>
