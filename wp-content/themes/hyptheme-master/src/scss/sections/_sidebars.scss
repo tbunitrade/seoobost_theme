@@ -1,0 +1,134 @@
+.sidebarNew {
+
+  display: none;
+
+  @media (min-width: $screen-md-min) {
+    // display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    max-width: 340px;
+    float: right;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    max-width: 374px;
+    margin-right: 23px;
+  }
+
+  .telegram {
+    display: inline-block;
+    vertical-align: top;
+    background-image: url("../img/mobile/telegramNew.png");
+    background-repeat: no-repeat;
+    width: 340px;
+    height: 206px;
+    background-size: cover;
+    position: relative;
+    text-decoration: none;
+    border-radius: 5px;
+
+    @media (min-width: $screen-lg-min) {
+      width: 377px;
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: 900;
+      color: $white;
+      text-transform: uppercase;
+      padding: 29px 0px 0px 16px;
+      line-height: 37px;
+
+      @media (min-width: $screen-lg-min) {
+        font-size: 28px;
+        padding: 24px 0 0 14px;
+        line-height: 39px;
+      }
+    }
+
+    &:after {
+      background-image: url("../img/mobile/telegramFlag.png");
+      background-repeat: no-repeat;
+      height: 104px;
+      width: 43%;
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 26px;
+      right: 0;
+    }
+  }
+
+  .newtagCont {
+    border: 1px solid #efeff3;
+    border-radius: 5px;
+
+    margin: 25px 0px 25px 0px;
+    padding: 26px 0px 26px 0px;
+
+
+    .widgettitle {
+      display: none;
+    }
+
+    ul {
+      padding: 0px 14px;
+    }
+  }
+
+  .tagcloud {
+    padding: 0px 14px;
+
+    a{
+      display: inline-block;
+      vertical-align: top;
+      list-style-type: none;
+      border: 1px solid $rednew;
+      border-radius: 4px;
+      padding: 8px 15px;
+      margin: 8px 4px;
+      text-decoration: none;
+      color: $rednew;
+      font-size: 18px!important;
+      font-weight: 500;
+    }
+  }
+  .cat-item {
+    display: inline-block;
+    vertical-align: top;
+    list-style-type: none;
+    border: 1px solid $rednew;
+    border-radius: 4px;
+    padding: 8px 15px;
+    margin: 8px 4px;
+
+    a {
+      text-decoration: none;
+      color: $rednew;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+
+.tagcloud {
+  padding: 0px 14px;
+
+  a{
+    display: inline-block;
+    vertical-align: top;
+    list-style-type: none;
+    border: 1px solid $rednew;
+    border-radius: 4px;
+    padding: 8px 15px;
+    margin: 8px 4px;
+    text-decoration: none;
+    color: $rednew;
+    font-size: 18px!important;
+    font-weight: 500;
+  }
+}
+
+.widgettitle {
+  display: none;
+}

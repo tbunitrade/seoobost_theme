@@ -1,0 +1,135 @@
+/*General MAIN style*/
+
+/*---------------------------------------
+   Typography
+-----------------------------------------*/
+body {
+  font-family: 'MetaPro';
+  background: #f8f8fa;
+}
+
+/* FONT FACE LOADER */
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'MetaPro';
+  src: url('../fonts/metapro/metapro-book.otf') format ('otf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MetaPro';
+  src: url('../fonts/metapro/metapro-normal.otf') format ('otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MetaPro';
+  src: url('../fonts/metapro/metapro-medium.otf') format ('otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MetaPro';
+  src: url('../fonts/metapro/metapro-bold.otf') format ('otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MetaPro';
+  src: url('../fonts/metapro/metapro-black.otf') format ('otf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+
+/* HEADINGS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+  font-family: 'MetaPro';
+  font-weight: normal;
+}
+
+/*Wrapper*/
+.container {
+  min-width: 320px;
+  padding: 0;
+
+  @media (min-width: $screen-md-min){
+
+  }
+}
+
+.content-area {
+  //margin: 22px 10px 0px 10px;
+  //margin-top: 50px;
+
+  @media (min-width: $screen-md-min){
+    margin: auto;
+    //margin-top: 100px;
+  }
+}
+
+.navbar {
+  margin-bottom: 0!important;
+}
+
+*{
+  outline: 0px solid red!important;
+}
+
+.clear {
+  clear: both;
+}
+
+.navbar-inverse {
+  background-color: #191919;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+
+/* Hides navigation links and site footer when infinite scroll is active */
+.infinite-scroll #navigation,
+.infinite-scroll.neverending #footer {
+  display: none;
+}
+/* Shows the footer again in case all posts have been loaded */
+.infinity-end.neverending #footer {
+  display: block;
+}
+
+.post {
+  header {
+    background: transparent;
+  }
+
+  .post-thumbnail {
+    a img {
+      border: none;
+      width: 100%;
+    }
+  }
+}
+
+.hrefTypeOne {
+  background: $postcolor!important;
+}
+
+

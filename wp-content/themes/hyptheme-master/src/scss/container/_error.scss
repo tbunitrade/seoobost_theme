@@ -1,0 +1,179 @@
+//.error404 {
+//
+//
+//  .site-main{
+//
+//    article {
+//      box-shadow: 0 0 3px rgba(0,0,0,.5);
+//      border-radius: 12px;
+//      width: 100%;
+//      max-width: 768px;
+//      margin: auto;
+//      margin-bottom: 55px;
+//      display: block;
+//
+//      .panel-image {
+//        background: black;
+//        border-radius: 12px 12px 0px 0px;
+//        height: 249px;
+//
+//        .panel-image-prop {
+//          height: 249px;
+//          border-radius: 12px 12px 0 0;
+//
+//          img {
+//            border-radius: 12px 12px 0px 0px;
+//          }
+//        }
+//      }
+//
+//      .panel-image {
+//        background-repeat: no-repeat;
+//        margin: auto;
+//        display: block;
+//        width:100%;
+//        max-width: 768px;
+//        position: relative;
+//
+//        .hrefTypeOne {
+//          display: none;
+//          width: 200px;
+//          height: 46px;
+//          line-height: 42px;
+//          text-align: center;
+//          border: 2px solid $white;
+//          color: $white;
+//          background: transparent;
+//          border-radius: 20px;
+//          position: absolute;
+//          left: 50%;
+//          top:50%;
+//          transform: translate(-50%,-50%);
+//          z-index: 999;
+//        }
+//
+//        .hrefTypeTwo {
+//          display: block;
+//          background: url(../../dist/img/linktopost.png);
+//          background-repeat: no-repeat;
+//          width: 36px;
+//          height: 36px;
+//          position: absolute;
+//          right: 15px;
+//          bottom: 20px;
+//          z-index: 999;
+//        }
+//
+//        &:hover {
+//
+//          .panel-image-prop {
+//
+//            img {
+//              opacity: 0.5;
+//              background: $black;
+//            }
+//          }
+//
+//          .hrefTypeOne {
+//            display: block;
+//
+//          }
+//
+//          .hrefTypeTwo {
+//            display: block;
+//
+//          }
+//        }
+//      }
+//
+//      .panel-content {
+//        margin: auto;
+//        display: block;
+//        width:100%;
+//        max-width: 768px;
+//
+//        header {
+//          background: transparent;
+//
+//          .entry-title {
+//            font-size: 16px;
+//            line-height: 20px;
+//            font-weight: 700;
+//            font-family: 'Roboto';
+//            padding: 30px 10px 0px 31px;
+//            text-transform: uppercase;
+//
+//            @media (min-width: $screen-md-min){
+//              font-size: 20px;
+//              line-height: 20px;
+//              padding: 30px 0px 0px 38px;
+//            }
+//          }
+//        }
+//
+//        .entry-content {
+//
+//          p {
+//            padding: 20px 30px 38px ;
+//            font-size: 15px;
+//            font-weight: 300;
+//            font-family: 'Roboto';
+//            line-height: 26px;
+//          }
+//        }
+//
+//        .bottom-content {
+//          border-top:1px solid $panelhr;
+//          height: 45px;
+//          width: 100%;
+//          display: inline-block;
+//
+//          .row {
+//            margin: 0;
+//            margin-right: 0px;
+//            margin-left: 0px;
+//            padding: 0px 28px;
+//
+//            p {
+//              padding-top: 11px;
+//              display: inline-block;
+//              font-size: 12px;
+//              font-family: 'Roboto';
+//              font-weight: 400;
+//              line-height: 12px;
+//              color: $searchInput;
+//
+//              span {
+//                position: relative;
+//                top: -7px;
+//                left: 5px;
+//              }
+//            }
+//            .postCalendar {
+//            /*  width: 65%;*/
+//
+//              @media (min-width: $screen-md-min){
+//               /* width: 71%;*/
+//              }
+//            }
+//            .postView {
+//             /* width: 15%;*/
+//              @media (min-width: $screen-md-min){
+//               /* width: 12%;*/
+//              }
+//            }
+//            .postCount {
+//             /* width: 15%;*/
+//
+//              @media (min-width: $screen-md-min){
+//                /*width: 12%;*/
+//              }
+//            }
+//          }
+//
+//        }
+//
+//      }
+//    }
+//  }
+//}

@@ -132,26 +132,21 @@
 
 	 
 		</div>
-		<div class="row">
-			<div class="col-md-12">
-			<form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
-    <!-- Поле Email (обязательно) -->
-    email: <input type="text" name="email" placeholder="Ваш email" /><br/>
-    <!-- Токен списка -->
-    <!-- Получить API ID на: https://app.getresponse.com/campaign_list.html -->
-
-<input type="hidden" name="thankyou_url" value="http://sivenkoff.com/thanks"/>
-
-    <input type="hidden" name="campaign_token" value="nxKJ8" />
-    <!-- Кнопка подписаться -->
-    <input type="submit" value="Подписка"/>
-</form>
-				</div>
-				</div>
-		
 		<div class="meta-left">
+			<form class="myFormClass" action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+					<!-- Поле Email (обязательно) -->
+					<input class="textInput" type="text" name="email" placeholder="Ваш email" />
+					<!-- Токен списка --> 
+					<!-- Получить API ID на: https://app.getresponse.com/campaign_list.html -->
+					<input type="hidden" name="thankyou_url" value="http://sivenkoff.com/thanks"/>
+					<input type="hidden" name="campaign_token" value="nxKJ8" />
+					<!-- Кнопка подписаться -->
+					<input class="textSubmit"  type="submit" value="Подписаться на рассылку"/>
+				</form>
+		
+		
 
-		<?php dynamic_sidebar('sendsid') ?>
+		
 		
 
 		

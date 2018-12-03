@@ -1,0 +1,9 @@
+/*
+Theme Name: Hyip WordPress Theme
+Author : Platinum Trade
+Description : Blog theme for PlanetHyip
+Version : 1.1
+Text Domain: hyipTheme
+*/
+
+@import '/dist/css/style.css' screen;

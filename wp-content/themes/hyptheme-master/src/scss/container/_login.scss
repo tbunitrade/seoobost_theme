@@ -1,0 +1,290 @@
+.layoutAuthArea{
+  display: none;
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+
+  left: 0;
+  top:0;
+
+  &:before {
+    opacity: 0.8;
+    background: $black;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+  }
+
+
+  .form {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10001;
+    width: 555px;
+    height: 602px;
+
+    background: white;
+    border-radius: 14px;
+
+    .closeAuth {
+      background: red;
+      width: 28px;
+      height: 28px;
+      position: absolute;
+      right: 0px;
+      display: block;
+      background: url("../../dist/img/close.png");
+      border-radius: 50%;
+    }
+
+
+    .earth {
+      width: 100%;
+      max-width: 424px;
+      height: 55px;
+      position: relative;
+      margin: auto;
+      font-size: 0;
+
+      
+      .planet {
+        background: url("../../dist/img/earth.png");
+        width: 81px;
+        height: 82px;
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+
+
+
+      }
+
+      .loginBtn{
+        display: inline-block;
+        width: 50%;
+        font-size: 18px;
+        font-weight:700;
+
+        color: $fontReg;
+        text-align: center;
+        line-height: 55px;
+        background: $backgroundAuth;
+        border-radius: 5px 0px 0px 5px;
+        transition: .17s linear;
+
+        &:hover {
+          background: $hoverBtn!important;;
+          color: $white!important;;
+          transition-delay: 0.2s;
+        }
+      }
+
+      .regBtn {
+        display: inline-block;
+        width: 50%;
+        font-size: 18px;
+        font-weight:700;
+
+        color: $fontReg;
+        text-align: right;
+        padding-right: 20px;
+        line-height: 55px;
+        background: $backgroundAuth;
+        border-radius: 0px 5px 5px 0px;
+        transition: .17s linear;
+
+        &:hover {
+          background: $hoverBtn!important;;
+          color: $white!important;;
+          transition-delay: 0.2s;
+        }
+      }
+    }
+
+
+
+  .TopContainer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  }
+    /*End of Top Container*/
+
+    .middleContainer{
+      width: 100%;
+      max-width: 425px;
+      height: auto;
+      margin: auto;
+      background: $white;
+      border-radius: 5px;
+
+      .errorR {
+        text-align: center;
+        color: red;
+        line-height: 50px;
+        height: 25px;
+        display: block;
+      }
+
+      .registerOk {
+        text-align: center;
+        color: green;
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+
+      .loginContainer,
+      #loginform{
+        /*min-height: 335px;*/
+        display: block;
+        background: $white;
+
+        .newPassword {
+          position: relative;
+          top:100px;
+          font-weight: 500;
+          font-style: italic;
+
+          font-size: 20px;
+          text-align: center;
+          width: 100%;
+          display: inline-block;
+          color: $white;
+        }
+
+        .formSender{}
+
+          label {
+            display: none;
+            width: 100%;
+            max-width: 344px;
+            margin: auto;
+
+            .checkboxIn{
+
+              height: 20px;
+              display: inline-block;
+              width: 50px;
+
+            }
+          }
+
+          input{
+            width: 100%;
+            max-width: 344px;
+            height: 51px;
+            border: 1px solid $borderInput;
+            margin: auto;
+            display: block;
+            margin-bottom: 20px;
+            background: transparent;
+            background-color: transparent;
+            border-radius: 5px;
+            padding-left: 20px;
+
+            input:-webkit-autofill {
+              background: red!important;
+            }
+
+
+          }
+
+          p {
+            display: block;
+            text-align: center;
+            font-size:16px;
+            line-height: 26px;
+            font-weight: 700;
+
+            margin-top: 25px;
+            margin-bottom: 25px;
+          }
+
+          .submit{
+            width: 100%;
+            max-width: 175px;
+            height: 56px;
+            background: $commentssubmit;
+            color: $white;
+            font-weight: 700;
+            padding: 0;
+            transition: .17s linear;
+
+            &:hover {
+              background: $white;
+              color: $commentssubmit;
+              transition-delay: 0.2s;
+            }
+          }
+        /**/
+      }
+
+      .regContainer{
+        display: none;
+        min-height: 335px;
+        background: $white;
+
+        .formSender{
+          padding-bottom: 19px;
+
+          input {
+
+            width: 100%;
+            max-width: 344px;
+            height: 51px;
+            border: 1px solid $borderInput;
+            margin: auto;
+            display: block;
+            margin-bottom: 20px;
+            background: transparent;
+            background-color: transparent;
+            border-radius: 5px;
+            padding-left: 20px;
+          }
+
+          p {
+            display: block;
+            text-align: center;
+            font-size:16px;
+            line-height: 26px;
+            font-weight: 700;
+
+            margin-top: 25px;
+            margin-bottom: 25px;
+          }
+
+          .submit{
+            width: 100%;
+            max-width: 175px;
+            height: 56px;
+            background: $commentssubmit;
+            color: $white;
+            font-weight: 700;
+            padding: 0;
+            transition: .17s linear;
+
+            &:hover {
+              background: $white;
+              color: $commentssubmit;
+              transition-delay: 0.2s;
+            }
+          }
+        }
+      }
+
+    }
+    /*End of middle container*/
+  }
+  /*End of Form*/
+
+}

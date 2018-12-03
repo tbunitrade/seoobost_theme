@@ -1,0 +1,80 @@
+// SCSS Bits and Variables.
+//-------------------------------- VARIABLES
+
+$white: #ffffff;
+$black: #000000;
+$green: #00ff00;
+$orange:  #ffa500;
+$ccc : #ccc;
+$blue: #0000ff;
+$red:  #ff0000;
+$rednew:#ea1f1f;
+$dark: #000000;
+$grey-bg : #F7F8FA;
+$blue-light: #1998D9;
+$blue-dark :#0382C2;
+$grey-dark: #2f4f4f;
+$arrowmenu:#a4a49f;
+$headerbg: #191919;
+$panellogin : #ea1f1f;
+$panelhr: #eaeaea;
+$searchInput: #c1c1c1;
+$readMoreHref: #0053ff;
+
+/*single post color of tags and category*/
+
+$categorytag: #0053ff;
+
+$postcolor : #cc4242;
+
+/*comments collor*/
+
+$hrefDisDefault:#c3c3c3;
+$hrefDiComTw:#84dbf7;
+$hrefDiComGp: red;
+$commentssubmit: #6bbe92;
+
+$labelColor: #7b7b7f;
+$namelabel: #4b9a70;
+
+$backgroundAuth:#29363d;
+$fontReg:#a4a8ab;
+$hoverBtn :#6bbe92;
+$borderInput : #c4d0e7;
+
+  // // Defining values
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1200px;
+$screen-md-max: ($screen-lg-min - 1);
+
+
+// // Defining values
+// $screen-sm-min: 768px;
+// $screen-xs-max: ($screen-sm-min - 1);
+// $screen-md-min: 992px;
+// $screen-sm-max: ($screen-md-min - 1);
+// $screen-lg-min: 1200px;
+// $screen-md-max: ($screen-lg-min - 1);
+
+// // Usage
+// @media (max-width: $screen-xs-max) { ... }
+// @media (min-width: $screen-sm-min) { ... }
+// @media (max-width: $screen-sm-max) { ... }
+// @media (min-width: $screen-md-min) { ... }
+// @media (max-width: $screen-md-max) { ... }
+// @media (min-width: $screen-lg-min) { ... }
+
+// added code for bootstrap 3 , for a row with no padding between columns.
+.row-no-padding {
+  [class*="col-"] {
+    padding-left: 0 ;
+    padding-right: 0 ;
+    margin-right: 0 ;
+    margin-left:  0 ;
+  }
+}
+
+//--------------------------------- FONTS

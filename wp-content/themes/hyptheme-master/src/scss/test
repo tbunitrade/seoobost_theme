@@ -1,0 +1,28 @@
+header {
+
+  .logo {
+    display: inline-block;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 12px;
+    outline: 1px solid;
+
+    @media (min-width: $screen-sm-min) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      font-size: 28px;
+    }
+  }
+
+  .nav {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-toggle {
+    outline: 1px solid;
+  }
+}
