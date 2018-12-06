@@ -10,7 +10,7 @@ get_header(); ?>
     <main id="main indexphp" class="site-main" role="main">
         <div class="container sunset-posts-container">
             <?php // Show the selected frontpage content.
-            $postsPerPage = 3;
+            $postsPerPage = 12;
             $args = array(
                 'post_type' => 'post',
                 'posts_per_page' => $postsPerPage
@@ -29,9 +29,22 @@ get_header(); ?>
         </div>
         <div id="scroll-to" class="container.text-center">
             <a  class="sunset-load-more"  data-page="<?php echo sunset_check_paged(1); ?>" data-url="<?php echo admin_url('admin-ajax.php');?>">
-                <span> <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i></span>
-                <span class="textDown">Загружаем еще...</span>
+            Загрузить еще 
+                <!-- <span class="hide"> <i class="fa fa-spinner fa-spin fa-3x fa-fw" ></i></span> -->
+                <!-- <span class="textDown">Загружаем еще...</span> -->
             </a>
+            <script>
+                $(document).ready(function(){
+                    $(".sunset-load-more").hover(function(){
+                        $(this).css("box-shadow", "0 0 10px rgba(0,0,0,0.5)");
+                        $(".sunset-load-more span").css("display", "block");
+                        }, function(){
+                        $(".sunset-load-more span").css("display", "none");
+                        $(this).css("box-shadow", "none");
+                    });
+                });
+            </script>
+           
         </div>
     </main><!-- #main -->
 </div><!-- #primary -->

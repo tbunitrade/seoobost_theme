@@ -1,18 +1,5 @@
 $(document).ready(function(){
-    console.log('ready');
-
-     // $('.panel-image-prop').mouseover( function() {
-     //     console.log('hover at article');
-     //     $(this).css("opacity", "0.5");
-     //     $('.hrefTypeOne').css("opacity","1");
-     //
-     // });
-     //
-     // $('.panel-image-prop').mouseout( function() {
-     //     console.log('hover at article');
-     //     $(this).css("opacity", "1");
-     // });
-
+    console.log('ready'); 
 
     $('.hrefTypeOne').mouseover(function(){
        if ( $('.hrefTypeOne').hover() == true ) {
@@ -31,7 +18,7 @@ $(document).ready(function(){
          var ajaxurl = that.data('url');
          console.log('page ' + page + ' Start Ajax');
 
-         that.addClass('loading').find('.textDown').slideUp(100);
+         that.addClass('loading').find('span').slideUp(50);
          console.log('Add loading');
 
          $.ajax({
@@ -45,19 +32,92 @@ $(document).ready(function(){
 
              error : function(response) {
                  console.log(response);
+                 console.log('Post end');
              },
 
              success :  function(response) {
                  setTimeout(function(){
                      that.data('page', newPage );
                      $('.sunset-posts-container').append(response);
-                     that.removeClass('loading').find('.textDown').slideDown(100);
+                     that.removeClass('loading').find('span').slideDown(100);
                      console.log('cancel loading');
                      revealPosts();
-                 } , 1200);
+                 } , 10);
              }
          });
      });
+
+     $(document).on('click','.sunset-load-more-category1:not(.loading)', function(){
+
+        var that = $(this);
+        var page = that.data('page');
+        var newPage = page+1;
+        var ajaxurl = that.data('url');
+        console.log('page ' + page + ' Start Ajax');
+
+        that.addClass('loading').find('.textDown').slideUp(100);
+        console.log('Add loading');
+
+        $.ajax({
+            url : ajaxurl,
+            type : 'post',
+
+            data :  {
+                page : page,
+                action : 'sunset_load_more_category1'
+            },
+
+            error : function(response) {
+                console.log(response);
+            },
+
+            success :  function(response) {
+                setTimeout(function(){
+                    that.data('page', newPage );
+                    $('.sunset-posts-container').append(response);
+                    that.removeClass('loading').find('.textDown').slideDown(100);
+                    //console.log('cancel loading');
+                    revealPosts();
+                } , 50);
+            }
+        });
+    });
+
+    $(document).on('click','.sunset-load-more-category2:not(.loading)', function(){
+
+        var that = $(this);
+        var page = that.data('page');
+        var newPage = page+1;
+        var ajaxurl = that.data('url');
+        console.log('page ' + page + ' Start Ajax');
+
+        that.addClass('loading').find('.textDown').slideUp(100);
+        console.log('Add loading');
+
+        $.ajax({
+            url : ajaxurl,
+            type : 'post',
+
+            data :  {
+                page : page,
+                action : 'sunset_load_more_category2'
+            },
+
+            error : function(response) {
+                console.log(response);
+            },
+
+            success :  function(response) {
+                setTimeout(function(){
+                    that.data('page', newPage );
+                    $('.sunset-posts-container').append(response);
+                    that.removeClass('loading').find('.textDown').slideDown(100);
+                    //console.log('cancel loading');
+                    revealPosts();
+                } , 50);
+            }
+        });
+    });
 
      /*reveal posts*/
 
@@ -70,7 +130,7 @@ $(document).ready(function(){
              var el = posts[i];
              $(el).addClass('reveal');
              i++;
-         }, 200);
+         }, 50);
 
 
      }
@@ -86,7 +146,7 @@ $(document).ready(function(){
          var scroll = $(window).scrollTop();
          console.log(scroll);
 
-         if ( Math.abs( scroll - last_scroll) > $(window).height()*0.1 ) {
+         if ( Math.abs( scroll - last_scroll) > $(window).height()*0.8 ) {
              last_scroll = scroll;
              console.log('scroll updated ' +  last_scroll  );
 
@@ -120,10 +180,15 @@ $(document).ready(function(){
 
      /*Infinite Scroll*/
      $(window).scroll(function() {
-         if ($(window).scrollTop() == $(document).height() - $(window).height()) {
-             $('.sunset-load-more').click();
-             console.log('click');
-         }
+        //  var docheight = $(document).height();
+        //  var windowheight = $(window).height();
+        //  var topheight = $(window).scrollTop();
+
+        //  if ( topheight == docheight - windowheight) {
+        //      $('.sunset-load-more').click();
+        //      $('.sunset-load-more-category').click();
+        //      console.log('click');
+        //  }
      });
 
 

@@ -49,9 +49,20 @@
 
                 <div id="scroll-to" class="container.text-center">
                     <a  class="sunset-load-more"  data-page="<?php echo sunset_check_paged(1); ?>" data-url="<?php echo admin_url('admin-ajax.php');?>">
-                  dad
+                   <span class="hide"> <i class="fa fa-spinner fa-spin fa-3x fa-fw" ></i></span>
+                <!-- <span class="textDown">Загружаем еще...</span> -->
                     </a>
-                </div>
+                    <script>
+                        $(document).ready(function(){
+                            $(".ajax-load-more-category").hover(function(){
+                                $(this).css("box-shadow", "0 0 10px rgba(0,0,0,0.5)");
+                                $(".ajax-load-more-category span").css("display", "block");
+                                }, function(){
+                                $(".ajax-load-more-category span").css("display", "none");
+                                $(this).css("box-shadow", "none");
+                            });
+                        });
+                    </script>
 
 
 

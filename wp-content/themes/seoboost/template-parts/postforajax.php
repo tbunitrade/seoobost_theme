@@ -5,8 +5,7 @@ $class = get_query_var('post-class');
 
 
  
- 
-    <article id="post-<?php #the_ID(); ?>" class="col-xs-12 col-sm-6 col-lg-4" <?php #post_class( $column ); ?>>
+    <article id="post-<?php #the_ID(); ?>" class="col-xs-12 col-sm-6  %) col-lg-4" <?php #post_class( $column ); ?>>
         <div class="post-wrapper">
             <?php if ( has_post_thumbnail() ) : ?>
                 <div class="post-thumbnail">
