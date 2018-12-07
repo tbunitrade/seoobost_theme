@@ -11083,8 +11083,7 @@ display: block;
   }
 
   .sunset-load-more-tag,
-  .sunset-load-more-category1,
-  .sunset-load-more-category2,
+  .sunset-load-more-style,  
   .sunset-load-more {
 	background: #6ed3cf;	
 	display: block;
@@ -11110,8 +11109,7 @@ display: block;
   
 	} */
 }
-.sunset-load-more-category1:hover,
-.sunset-load-more-category2:hover,
+.sunset-load-more-style :hover,
 .sunset-load-more:hover{
 	background: black;
 }
@@ -11124,8 +11122,8 @@ display: block;
 }
 
 .sunset-load-more-tag	.more ,
-.sunset-load-more-category1	.more ,  
-.sunset-load-more-category2	.more ,  
+.sunset-load-more-style	.more ,  
+
 .sunset-load-more	.more {
 	  /*background-image: url("public/img/refreshbtn.png");*/
 	  background: #6ed3cf;

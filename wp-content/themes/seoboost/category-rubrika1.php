@@ -46,7 +46,7 @@ get_header(); ?>
 
                 </div>
                 <div id="scroll-to" class="container.text-center">
-                    <a  class="sunset-load-more-category1"  data-page="<?php echo sunset_check_paged(1); ?>" data-url="<?php echo admin_url('admin-ajax.php');?>">
+                    <a  class="sunset-load-more-style sunset-load-more-category1"  data-page="<?php echo sunset_check_paged(1); ?>" data-url="<?php echo admin_url('admin-ajax.php');?>">
                     Загрузить еще 
                            <!-- <span class="hide"> <i class="fa fa-spinner fa-spin fa-3x fa-fw" ></i></span> -->
                 <!-- <span class="textDown">Загружаем еще...</span> -->

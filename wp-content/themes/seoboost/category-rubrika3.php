@@ -19,26 +19,11 @@ get_header(); ?>
         <div class="row">
             <div class="col-md-8">
                 <div class="sunset-posts-container">
-                <?php 
-//$args = array ( 'category' => 9, 'posts_per_page' => 5);
-//$myposts = get_posts( $args );
-//print_r($myposts);
-//foreach( $myposts as $post ) :	setup_postdata($post);
- ?>
-//main category file
-<?php #endforeach; ?>
-
-                    <?php // Show the selected frontpage content.
-                    // echo get_the_category();
-                    // echo $category_obj = get_the_category();
-                    // echo $category = $category_obj[0]->slug;
-                    // $postsPerPage = 12;
-                    // $args = array(
-                    //     'post_type' => 'post',
-                    //     'posts_per_page' => $postsPerPage,
-                        
-                    // );
-                    $args = array ( 'category' => 9, 'posts_per_page' => 5);
+                <?php
+                    $args = array ( 
+                        'post_type' => 'post',
+                        'category_name' => 'rubrika3',  
+                        'posts_per_page' => 12);
 
                     $loop = new WP_Query($args);
 
@@ -49,7 +34,7 @@ get_header(); ?>
 
                             $class = 'reveal';
                             set_query_var('post-class' , $class );
-                            get_template_part( 'template-parts/postforajax-category', get_post_format() );
+                            get_template_part( 'template-parts/postforajax-category3', get_post_format() );
 
                         endwhile;
                         echo '</div>';
@@ -60,9 +45,9 @@ get_header(); ?>
 
                 </div>
                 <div id="scroll-to" class="container.text-center">
-                    <a  class="sunset-load-more-style sunset-load-more-category"  data-page="<?php echo sunset_check_paged(1); ?>" data-url="<?php echo admin_url('admin-ajax.php');?>">
-
-                           <span class="hide"> <i class="fa fa-spinner fa-spin fa-3x fa-fw" ></i></span>
+                    <a  class="sunset-load-more-style sunset-load-more-category3"  data-page="<?php echo sunset_check_paged(1); ?>" data-url="<?php echo admin_url('admin-ajax.php');?>">
+                           Загрузить еще 
+                           <!-- <span class="hide"> <i class="fa fa-spinner fa-spin fa-3x fa-fw" ></i></span> -->
                 <!-- <span class="textDown">Загружаем еще...</span> -->
                     </a>
                     <script>
